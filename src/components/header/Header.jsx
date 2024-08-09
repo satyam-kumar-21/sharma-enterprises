@@ -1,0 +1,97 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
+    return (
+        <>
+            <header className="fixed top-0 left-0 w-full bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 z-50">
+                <nav className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                    <Link to="/" className="flex items-center">
+                        <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Logo</span>
+                    </Link>
+                    <div className="flex items-center lg:order-2">
+                        <Link
+                            to="/contact-us"
+                            className="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        >
+                            Contact
+                        </Link>
+
+                        <button 
+                            onClick={toggleMenu}
+                            type="button" 
+                            className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" 
+                            aria-controls="mobile-menu"
+                            aria-expanded={isOpen}
+                        >
+                            <span className="sr-only">Open main menu</span>
+                            <svg className={`w-6 h-6 ${isOpen ? 'hidden' : 'block'}`} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path>
+                            </svg>
+                            <svg className={`w-6 h-6 ${isOpen ? 'block' : 'hidden'}`} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div className="hidden lg:flex lg:space-x-8">
+                        <Link to="/" className="block font-bold py-2 text-gray-700 hover:text-gray-900">Home</Link>
+                        <Link to="/about-us" className="block font-bold py-2 text-gray-700 hover:text-gray-900">About</Link>
+                        <Link to="/our-services" className="block font-bold py-2 text-gray-700 hover:text-gray-900">Services</Link>
+                        <Link to="/our-team" className="block py-2 font-bold text-gray-700 hover:text-gray-900">Team</Link>
+                        <Link to="/our-branches" className="block font-bold py-2 text-gray-700 hover:text-gray-900">Branches</Link>
+                    </div>
+                </nav>
+            </header>
+
+            {/* Mobile menu overlay */}
+            <div className={`fixed inset-0 bg-gray-800 bg-opacity-75 z-40 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} aria-labelledby="mobile-menu-label">
+                <div className={`fixed inset-0 bg-white p-6 z-50 transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                    <button 
+                        onClick={toggleMenu}
+                        type="button" 
+                        className="absolute top-4 right-4 text-gray-500 hover:text-gray-900"
+                    >
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div className="flex flex-col justify-center items-center h-full">
+                        <ul className="flex flex-col space-y-4 font-medium text-center">
+                            <li>
+                                <Link to="/" className="block py-2 text-gray-700 hover:text-gray-900" onClick={closeMenu}>Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/about-us" className="block py-2 text-gray-700 hover:text-gray-900" onClick={closeMenu}>About</Link>
+                            </li>
+                            <li>
+                                <Link to="/our-services" className="block py-2 text-gray-700 hover:text-gray-900" onClick={closeMenu}>Services</Link>
+                            </li>
+                            <li>
+                                <Link to="/our-team" className="block py-2 text-gray-700 hover:text-gray-900" onClick={closeMenu}>Team</Link>
+                            </li>
+                            <li>
+                                <Link to="/our-branches" className="block py-2 text-gray-700 hover:text-gray-900" onClick={closeMenu}>Branches</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            {/* Dummy div to cover space occupied by the fixed header */}
+            <div className="h-14 lg:h-16" />
+        </>
+    );
+};
+
+export default Header;
