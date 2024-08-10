@@ -36,7 +36,6 @@ const Carousel = () => {
       description: 'Enjoy well-made furniture that is built to last.',
     },
   ];
-  
 
   // Auto-slide interval
   useEffect(() => {
@@ -65,7 +64,7 @@ const Carousel = () => {
   return (
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
       {/* Carousel wrapper */}
-      <div className="relative h-[56vw] sm:h-[70vh] lg:h-[90vh] overflow-hidden rounded-lg">
+      <div className="relative h-[40vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[90vh] overflow-hidden rounded-lg">
         {slides.map((slide, index) => (
           <div
             key={index}
