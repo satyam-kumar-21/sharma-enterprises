@@ -1,10 +1,14 @@
 import React from 'react'
-import PageNotFound from '../PageNotFound'
+import OurBranches from './OurBranches'
+import BranchHero from './BranchHero'
+import Newsletter from '../home/Newsletter'
 
 function Branches() {
   return (
    <>
-   <PageNotFound />
+   <BranchHero />
+   <OurBranches />
+   <Newsletter />
    </>
   )
 }

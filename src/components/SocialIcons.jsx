@@ -8,7 +8,7 @@ const SocialIcons = () => {
     return (
         <div className="fixed bottom-6 right-6 flex flex-row space-x-3 z-50">
             <a 
-                href="https://wa.me/9180801880894" 
+                href="https://wa.me/918080188094" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="bubble-effect p-3 bg-green-500 rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 flex items-center justify-center"

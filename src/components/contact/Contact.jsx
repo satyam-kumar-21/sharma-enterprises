@@ -1,10 +1,14 @@
 import React from 'react'
-import PageNotFound from '../PageNotFound'
+import ContactForm from './ContactForm'
+import ContactHero from './ContactHero'
+import Newsletter from '../home/Newsletter'
 
 function Contact() {
   return (
     <>
-    <PageNotFound />
+    <ContactHero/>
+    <ContactForm />
+    <Newsletter />
     </>
   )
 }

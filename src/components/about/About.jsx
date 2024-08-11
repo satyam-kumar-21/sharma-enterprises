@@ -1,11 +1,12 @@
 import React from 'react'
-import PageNotFound from '../PageNotFound'
 import AboutUs from './AboutUs'
+import AboutOurFounder from './AboutOurFounder'
 
 function About() {
   return (
     <>
     <AboutUs />
+    <AboutOurFounder />
     </>
   )
 }

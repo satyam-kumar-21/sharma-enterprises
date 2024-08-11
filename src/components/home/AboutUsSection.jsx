@@ -6,7 +6,7 @@ const AboutUsSection = () => {
       <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           <div className="max-w-lg">
-            <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl lg:text-4xl">About Us</h2>
+            <h2 className="text-2xl font-extrabold text-blue-700 sm:text-3xl lg:text-4xl">About Us</h2>
             <p className="mt-4 text-gray-600 text-base sm:text-lg lg:text-xl">
             S. Sharma Enterprises offers premium furniture for homes and offices. We blend style and durability to enhance any space. Our commitment to quality and customer satisfaction ensures you receive exceptional products and service. Discover our diverse collection and transform your environment with our expertly crafted pieces.
             </p>

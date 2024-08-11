@@ -3,6 +3,8 @@ import Carousel from './Carousel'
 import AboutUsSection from './AboutUsSection'
 import OurServices from './OurServices'
 import OurTeam from './OurTeam'
+import Testimonials from './Testimonials'
+import Newsletter from './Newsletter'
 
 function Home() {
   return (
@@ -11,6 +13,8 @@ function Home() {
     <AboutUsSection />
     <OurServices />
     {/* <OurTeam /> */}
+    <Testimonials />
+    <Newsletter />
     
     </>
   )

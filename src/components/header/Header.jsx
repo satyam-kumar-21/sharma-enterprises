@@ -78,7 +78,7 @@ const Header = () => {
                                 <Link to="/our-services" className="block py-2 text-gray-700 hover:text-gray-900" onClick={closeMenu}>Services</Link>
                             </li>
                             <li>
-                                <Link to="/our-team" className="block py-2 text-gray-700 hover:text-gray-900" onClick={closeMenu}>Team</Link>
+                                <Link to="/our-gallery" className="block py-2 text-gray-700 hover:text-gray-900" onClick={closeMenu}>Gallery</Link>
                             </li>
                             <li>
                                 <Link to="/our-branches" className="block py-2 text-gray-700 hover:text-gray-900" onClick={closeMenu}>Branches</Link>
