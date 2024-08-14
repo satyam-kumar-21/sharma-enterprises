@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebookSquare, faDribbble, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -33,16 +34,16 @@ const Footer = () => {
                                 <span className="block uppercase text-blueGray-500 text-sm sm:text-base font-semibold mb-2">Useful Links</span>
                                 <ul className="list-unstyled">
                                     <li>
-                                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+                                        <Link className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" to="/about-us">About</Link>
                                     </li>
                                     <li>
-                                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+                                        <Link className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" to="/our-services">Services</Link>
                                     </li>
                                     <li>
-                                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
+                                        <Link className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" to="/our-gallery">Gallery</Link>
                                     </li>
                                     <li>
-                                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free Products</a>
+                                        <Link className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" to="/our-branches">Our Branches</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -50,16 +51,13 @@ const Footer = () => {
                                 <span className="block uppercase text-blueGray-500 text-sm sm:text-base font-semibold mb-2">Other Resources</span>
                                 <ul className="list-unstyled">
                                     <li>
-                                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT License</a>
+                                        <Link className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" to="/terms-condition">Terms & Conditions</Link>
                                     </li>
                                     <li>
-                                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" href="https://creative-tim.com/terms?ref=njs-profile">Terms & Conditions</a>
+                                        <Link className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" to="/privacy-policy">Privacy Policy</Link>
                                     </li>
                                     <li>
-                                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
-                                    </li>
-                                    <li>
-                                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+                                        <Link className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm sm:text-base" to="/contact-us">Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>

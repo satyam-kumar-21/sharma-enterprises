@@ -10,6 +10,8 @@ import Footer from './components/footer/Footer';
 import SocialIcons from './components/SocialIcons';
 import ScrollToTop from './components/ScrollToTop';
 import Gallery from './components/gallery/Gallery';
+import Terms from './components/other/Terms';
+import Privacy from './components/other/Privacy';
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
         <Route path="/our-gallery" element={<Gallery />} />
         <Route path="/our-branches" element={<Branches />} />
         <Route path="/contact-us" element={<Contact />} />
+        <Route path="/terms-condition" element={<Terms />} />
+        <Route path="/privacy-policy" element={<Privacy />} />
       </Routes>
       <Footer />
     </Router>

@@ -5,6 +5,7 @@ import OurServices from './OurServices'
 import OurTeam from './OurTeam'
 import Testimonials from './Testimonials'
 import Newsletter from './Newsletter'
+import VisionMission from './VisionMission'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
     <AboutUsSection />
     <OurServices />
     {/* <OurTeam /> */}
+    <VisionMission />
     <Testimonials />
     <Newsletter />
     
