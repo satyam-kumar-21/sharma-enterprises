@@ -12,7 +12,7 @@ const AboutUs = () => {
           <div className="max-w-lg p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-extrabold text-white sm:text-3xl lg:text-4xl">About Us</h2>
             <p className="mt-4 text-white text-base sm:text-lg lg:text-xl">
-              S. Sharma Enterprises offers premium furniture for homes and offices. We blend style and durability to enhance any space. Our commitment to quality and customer satisfaction ensures you receive exceptional products and service. Discover our diverse collection and transform your environment with our expertly crafted pieces.
+            S. Sharma Enterprises offers premium furniture for homes and offices, with 10 years of experience blending style and durability to enhance any space. Our commitment to quality and customer satisfaction ensures you receive exceptional products and service. Discover our diverse collection and transform your environment with our expertly crafted pieces.
             </p>
             <div className="mt-8">
               <a href="#" className="text-blue-300 hover:text-blue-400 font-medium text-base sm:text-lg lg:text-xl">

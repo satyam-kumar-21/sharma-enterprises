@@ -36,7 +36,7 @@ const ContactForm = () => {
             />
           </svg>
         ),
-        contact: "+91 8252962009",
+        contact: "+91 8080188094",
       },
       {
         icon: (

@@ -2,17 +2,17 @@
 const testimonials = [
     {
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUpsDK5dkH7envHCdUECqq0XzCWK1Dv96XcQ&s', // Replace with actual image URLs
-      name: 'John Doe',
+      name: 'Shivam singh',
       message: 'I am thrilled with the service! The team came to my home and assembled my new furniture efficiently. They were professional, tidy, and their attention to detail was remarkable. My living room looks fantastic!',
     },
     {
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUpsDK5dkH7envHCdUECqq0XzCWK1Dv96XcQ&s', // Replace with actual image URLs
-      name: 'Jane Smith',
+      name: 'Naval kishore',
       message: 'The in-home furniture assembly service was outstanding. The staff arrived on time, were courteous, and did a superb job assembling our new bedroom set. They even helped rearrange the room to ensure everything looked perfect.',
     },
     {
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUpsDK5dkH7envHCdUECqq0XzCWK1Dv96XcQ&s', // Replace with actual image URLs
-      name: 'Emily Johnson',
+      name: 'Raju pandey',
       message: 'Exceptional service from start to finish. The team handled everything from assembly to cleanup. They were respectful of my home and ensured all furniture pieces were assembled correctly and safely. Highly recommend this service!',
     },
   ];

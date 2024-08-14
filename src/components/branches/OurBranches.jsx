@@ -7,7 +7,7 @@ const branches = [
     image: 'https://via.placeholder.com/300x200', // Replace with actual image URLs
     address: '202/3, Ground Floor, Night nagar, Lal Bahdur Shastri Marg, Sion West , Mumbai',
     email: 'ssharma02081@gmail.com',
-    phone: '+91 8252962009',
+    phone: '+91 8080188094',
     website: 'http://ssharmaenterprises.com',
     social: {
       facebook: 'https://facebook.com/branchone',
@@ -16,19 +16,19 @@ const branches = [
       phone: 'tel:+918080188094',
     },
   },
-  {
-    image: 'https://via.placeholder.com/300x200', // Replace with actual image URLs
-    address: '........ ..... .... ..... ..',
-    email: 'ssharma02081@gmail.com',
-    phone: '+91 8080188094',
-    website: 'http://ssharmaenterprises.com',
-    social: {
-      facebook: 'https://facebook.com/',
-      instagram: 'https://instagram.com/',
-      whatsapp: 'https://wa.me/918080188094',
-      phone: 'tel:+918080188094',
-    },
-  },
+  // {
+  //   image: 'https://via.placeholder.com/300x200', // Replace with actual image URLs
+  //   address: '........ ..... .... ..... ..',
+  //   email: 'ssharma02081@gmail.com',
+  //   phone: '+91 8080188094',
+  //   website: 'http://ssharmaenterprises.com',
+  //   social: {
+  //     facebook: 'https://facebook.com/',
+  //     instagram: 'https://instagram.com/',
+  //     whatsapp: 'https://wa.me/918080188094',
+  //     phone: 'tel:+918080188094',
+  //   },
+  // },
 ];
 
 const OurBranches = () => {

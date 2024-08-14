@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from "../../images/logo3.png"
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +18,8 @@ const Header = () => {
             <header className="fixed top-0 left-0 w-full bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 z-50">
                 <nav className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
-                        <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-                        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Logo</span>
+                        <img src={logo} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                        {/* <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Logo</span> */}
                     </Link>
                     <div className="flex items-center lg:order-2">
                         <Link
